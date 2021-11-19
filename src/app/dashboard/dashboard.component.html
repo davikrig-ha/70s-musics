@@ -1,0 +1,7 @@
+<h2>Top Albúns</h2>
+<div class="albuns-menu">
+  <a *ngFor="let album of albuns"
+    routerLink="/detail/{{album.id}}">
+    {{album.name}}
+  </a>
+</div>

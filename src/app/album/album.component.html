@@ -1,0 +1,14 @@
+ <h2>Albuns for sale</h2>
+
+<ul class="albuns">
+  <li *ngFor="let album of albuns">
+
+    <a routerLink="/detail/{{album.id}}">
+
+    <span class="badge">{{album.name}}</span> 
+    
+     <span>{{album.author}}</span>  
+     </a>
+  </li>
+</ul>
+

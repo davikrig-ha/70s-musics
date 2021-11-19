@@ -1,0 +1,22 @@
+<div *ngIf="album">
+    <h2>{{album.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{album.id}}</div>
+    <div><span>age: </span>{{album.age}}</div>
+    
+    <div>
+      <label for="album-name">Album name: </label>
+      <input id="album-name" [(ngModel)]="album.name" placeholder="name">
+    </div>
+    
+    <div>
+        <label for="author-name">Author name: </label>
+        <input id="author-name" [(ngModel)]="album.author" placeholder="author">
+    </div>
+    
+    <div>
+        <label for="album-age">Album age:</label>
+        <input id="album-age" [(ngModel)]="album.age" placeholder="age">
+    </div>
+    
+      <button (click)="goBack()">go back</button>
+    </div>
